@@ -21,7 +21,7 @@ In this hands on lab, you will learn how to:
 <a name="Prerequisites" />
 ### Prerequisites ###
 
-- [Internet Explorer 10](http://windows.microsoft.com/en-US/internet-explorer/products/ie/home)
+- Internet Explorer 10
 
 - An HTML editor of your choice
 
