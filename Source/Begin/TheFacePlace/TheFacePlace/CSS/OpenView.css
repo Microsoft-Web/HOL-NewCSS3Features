@@ -1,0 +1,130 @@
+.hidden
+{
+	visibility: hidden;
+}
+
+#mainSection
+{
+	clear: both;
+	float: none;
+}
+
+.game
+{
+	margin-bottom: 15px;
+	float: left;
+	width: 130px;
+	height: 130px;
+}
+
+	.game > .thumbnail
+	{
+		width: 100px;
+		height: 100px;
+		cursor: pointer;
+		border: solid 2px transparent;
+	}
+
+		.game > .thumbnail > img
+		{
+			width: 84px;
+			height: 84px;
+			position: relative;
+			left: 8px;
+			top: 8px;
+		}
+
+		.game > .thumbnail:hover, .game > .thumbnail:focus
+		{
+			border: solid 2px green;
+		}
+
+			.game > .thumbnail:hover img, .game > .thumbnail:focus img
+			{
+				width: 100px;
+				height: 100px;
+				left: 0px;
+				top: 0px;
+			}
+
+	.game > .caption
+	{
+		background-color: black;
+		color: white;
+		max-width: 100px;
+		margin-top: 10px;
+		border: dashed 1px transparent;
+	font-family: "YanoneKaffeesatz", "HelveticaNeueLightCondensed", "HelveticaNeue-Light-Condensed", "Helvetica Neue Light Condensed" !important;
+		-ms-font-feature-settings: "kern" 10;
+	font-size: 16px;
+	}
+
+		.game > .caption:hover
+		{
+			border-color: rgba(255, 255, 255, 0.50);
+		}
+
+		.game > .caption:focus
+		{
+			border-color: white;
+		}
+
+	.game > .thumbnail:active
+	{
+		border: solid 2px orange;
+	}
+
+	.game > .thumbnail.selected
+	{
+		border: solid 2px red;
+	}
+
+#newGame > .thumbnail
+{
+	background-color: #dce638;
+}
+
+.selection-mode .thumbnail.emphasis
+{
+	opacity: 1;
+}
+
+#commandBar
+{
+	text-align: center;
+	clear: both;
+}
+
+.pager
+{
+	text-align: center;
+	vertical-align: middle;
+	padding: 4px;
+}
+
+	.pager .page-link, #backButton, #nextButton
+	{
+		color: #7c7c7c;
+		cursor: pointer;
+		padding: 1px 4px;
+	}
+
+		.pager .page-link.current
+		{
+			color: #00a2ff;
+			cursor: default;
+		}
+
+#trashButton
+{
+	float: left;
+}
+
+#target
+{
+	border: solid 1px red;
+	width: 84px;
+	height: 84px;
+	left: 100px;
+	position: relative;
+}

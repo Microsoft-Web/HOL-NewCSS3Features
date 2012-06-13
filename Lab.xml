@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Lab xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/ContentFramework.Core.Models">
+  <Id>NewCSS3Features</Id>
+  <Author>
+    <Blog>
+    </Blog>
+    <Email>
+    </Email>
+    <Name></Name>
+  </Author>
+  <Description>The Cascading Style Sheets Level 3 standard, commonly known as CSS3, is a vast improvement over the previous version of the standard. Internet Explorer 10 is more standards-compliant than ever and supports most of the CSS3 specifications. This lab will present Internet Explorer 10’s support for a selection of features. In particular, this lab focuses on fonts, column layout, and a few advanced selectors and visual effects.
+  </Description>
+  <Document ConversionType="Html">.\HOL.md</Document>
+  <Title>New CSS3 Features</Title>
+  <Version>1.0.6</Version>
+  <Source>.\Source</Source>
+  <!-- <DependencyChecker>.\Source\Setup\Dependencies.depi</DependencyChecker> -->
+  <!-- <Technologies>
+    <Technology>Internet Explorer 10</Technology>
+    <Technology>CSS3</Technology>
+  </Technologies> -->
+  <CustomProperties>    
+	<Property Name="GitHubRepository" Value="https://github.com/Microsoft-Web/HOL-NewCSS3Features" />
+  </CustomProperties>
+</Lab>
