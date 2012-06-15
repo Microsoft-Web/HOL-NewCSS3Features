@@ -82,19 +82,20 @@ This task shows how to create a **@font-face** rule to declare a web font and ho
 	>**Note:** This declaration is sufficient for Internet Explorer 10, but may not be supported by earlier versions of Internet Explorer or by other browsers.
 
 1. Modify the font face declaration to support the legacy EOT format recognized by previous versions of Internet Explorer and to support formats recognized by other modern browsers:
- 	
-	<!-- mark:5-8 -->
- 	````CSS
-	@font-face
+ 
+	<span class="codelanguage">CSS</span>
+	<pre>
+	<div class="code">@<span style="color:#800000">font-face</span>
 	{
-	    font-family: YanoneKaffeesatz;
-	    src: url('../Fonts/YanoneKaffeesatz-Regular.eot');
-	    src: local("☺"),
-	         url('../Fonts/YanoneKaffeesatz-Regular.woff') format('woff'),
-	         url('../Fonts/YanoneKaffeesatz-Regular.ttf') format('truetype'),
-	         url('../Fonts/YanoneKaffeesatz-Regular.svg') format('svg');	
+		 <span style="color:#FF0000">font-family</span>: <span style="color:#0000FF">YanoneKaffeesatz</span>;
+		 <span style="color:#FF0000">src</span>: <span style="color:#0000FF">url(&#39;../Fonts/YanoneKaffeesatz-Regular.eot&#39;)</span>;
+	<strong class="markLine" style="color:#0000FF">	    <span style="color:#FF0000">src</span>: <span style="color:#0000FF">local(&#9786;),</span></strong>
+	<strong class="markLine" style="color:#0000FF">          url(&#39;../Fonts/YanoneKaffeesatz-Regular.woff&#39;) format(&#39;woff&#39;),</strong>
+	<strong class="markLine" style="color:#0000FF">          url(&#39;../Fonts/YanoneKaffeesatz-Regular.ttf&#39;) format(&#39;truetype&#39;),</strong>
+	<strong class="markLine" style="color:#0000FF">          url(&#39;../Fonts/YanoneKaffeesatz-Regular.svg&#39;) format(&#39;svg&#39;);    </strong>
 	}
-	````
+	</div>
+	</pre>
 
 	Internet Explorer 10 will use the WOFF font file, and earlier versions will use the EOT font file in the first **src** property. Other modern browsers will use the first specified format they recognize in the last (in this case, the second) **src** property.
 
@@ -115,20 +116,18 @@ This task shows how to create a **@font-face** rule to declare a web font and ho
 The **@font-face** rule can be used to merge multiple font files into one font with multiple styles. For example, one file might contain just the regular style and another file might contain the bold style. When they are merged correctly, the browser will use the correct font file when either style is requested, without having to specify which one is being used in this instance. This task shows how to merge multiple web font files into one web font.
 
 1. Add another **@font-face** rule to download the bold style font file for the same font. Add the **font-weight** property to instruct the browser to use this font file wherever text is supposed to be bold.
- 	
-	<!-- mark:1-10 -->
- 	````CSS
-	@font-face
-	{
-	    font-family: YanoneKaffeesatz;
-	    font-weight: bold;
-	    src: url('../Fonts/YanoneKaffeesatz-Bold.eot');
-	    src: local("☺"),
-	         url('../Fonts/YanoneKaffeesatz-Bold.woff') format('woff'),
-	         url('../Fonts/YanoneKaffeesatz-Bold.ttf') format('truetype'),
-	         url('../Fonts/YanoneKaffeesatz-Bold.svg') format('svg');
-	}
-	````
+
+	<span class="codelanguage">CSS</span><pre><div class="code"><strong class="markLine">@<span style="color:#800000">font-face</span></strong>
+<strong class="markLine">{</strong>
+<strong class="markLine">    <span style="color:#FF0000">font-family</span>: <span style="color:#0000FF">YanoneKaffeesatz</span>;</strong>
+<strong class="markLine" style="color:#0000FF">    <span style="color:#FF0000">font-weight</span>: <span style="color:#0000FF">bold</span>;</strong>
+<strong class="markLine" style="color:#0000FF">    <span style="color:#FF0000">src</span>: <span style="color:#0000FF">url(&#39;../Fonts/YanoneKaffeesatz-Bold.eot&#39;)</span>;</strong>
+<strong class="markLine" style="color:#0000FF">    <span style="color:#FF0000">src</span>: <span style="color:#0000FF">local(&#9786;),</span></strong>
+<strong class="markLine" style="color:#0000FF">         url(&#39;../Fonts/YanoneKaffeesatz-Bold.woff&#39;) format(&#39;woff&#39;),</strong>
+<strong class="markLine" style="color:#0000FF">         url(&#39;../Fonts/YanoneKaffeesatz-Bold.ttf&#39;) format(&#39;truetype&#39;),</strong>
+<strong class="markLine" style="color:#0000FF">         url(&#39;../Fonts/YanoneKaffeesatz-Bold.svg&#39;) format(&#39;svg&#39;);</strong>
+<strong class="markLine">}</strong>
+</div></pre>
 
 <a name="Exercise2" />
 ### Exercise 2: Using CSS3 Columns ###
