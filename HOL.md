@@ -83,7 +83,7 @@ This task shows how to create a **@font-face** rule to declare a web font and ho
 
 1. Modify the font face declaration to support the legacy EOT format recognized by previous versions of Internet Explorer and to support formats recognized by other modern browsers:
  
-	<span class="codelanguage hidden"><p class="hidden">CSS </p></span>
+	<span class="codelanguage hidden" markdown="0">CSS</span>
 	<pre>
 	<div class="code">@<span style="color:#800000">font-face</span>
 	{
@@ -117,9 +117,7 @@ The **@font-face** rule can be used to merge multiple font files into one font w
 
 1. Add another **@font-face** rule to download the bold style font file for the same font. Add the **font-weight** property to instruct the browser to use this font file wherever text is supposed to be bold.
 
-	<span class="codelanguage hidden">CSS</span>
-	<pre>
-	<div class="code"><strong class="markLine">@<span style="color:#800000">font-face</span></strong>
+	<span class="codelanguage" markdown="1">CSS</span><pre><div class="code"><strong class="markLine">@<span style="color:#800000">font-face</span></strong>
 <strong class="markLine">{</strong>
 <strong class="markLine">    <span style="color:#FF0000">font-family</span>: <span style="color:#0000FF">YanoneKaffeesatz</span>;</strong>
 <strong class="markLine" style="color:#0000FF">    <span style="color:#FF0000">font-weight</span>: <span style="color:#0000FF">bold</span>;</strong>
@@ -129,8 +127,7 @@ The **@font-face** rule can be used to merge multiple font files into one font w
 <strong class="markLine" style="color:#0000FF">         url(&#39;../Fonts/YanoneKaffeesatz-Bold.ttf&#39;) format(&#39;truetype&#39;),</strong>
 <strong class="markLine" style="color:#0000FF">         url(&#39;../Fonts/YanoneKaffeesatz-Bold.svg&#39;) format(&#39;svg&#39;);</strong>
 <strong class="markLine">}</strong>
-	</div>
-	</pre>
+</div></pre>
 
 <a name="Exercise2" />
 ### Exercise 2: Using CSS3 Columns ###
