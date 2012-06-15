@@ -83,7 +83,7 @@ This task shows how to create a **@font-face** rule to declare a web font and ho
 
 1. Modify the font face declaration to support the legacy EOT format recognized by previous versions of Internet Explorer and to support formats recognized by other modern browsers:
  
-	<span class="codelanguage blank">CSS</span>
+	<span class="codelanguage hidden">CSS</span>
 	<pre>
 	<div class="code">@<span style="color:#800000">font-face</span>
 	{
@@ -117,7 +117,7 @@ The **@font-face** rule can be used to merge multiple font files into one font w
 
 1. Add another **@font-face** rule to download the bold style font file for the same font. Add the **font-weight** property to instruct the browser to use this font file wherever text is supposed to be bold.
 
-	<span class="codelanguage blank">CSS</span>
+	<span class="codelanguage hidden">CSS</span>
 	<pre>
 	<div class="code"><strong class="markLine">@<span style="color:#800000">font-face</span></strong>
 <strong class="markLine">{</strong>
