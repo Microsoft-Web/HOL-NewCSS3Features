@@ -88,13 +88,13 @@ This task shows how to create a **@font-face** rule to declare a web font and ho
 
 1. Modify the font face declaration to support the legacy EOT format recognized by previous versions of Internet Explorer and to support formats recognized by other modern browsers:
  
-	<span class="codelanguage">CSS</span>
+	<span class="codelanguage custom" style="display:none">CSS</span>
 	<pre>
 	<div class="code">@<span style="color:#800000">font-face</span>
 	{
 		 <span style="color:#FF0000">font-family</span>: <span style="color:#0000FF">YanoneKaffeesatz</span>;
 		 <span style="color:#FF0000">src</span>: <span style="color:#0000FF">url('../Fonts/YanoneKaffeesatz-Regular.eot')</span>;
-	<strong class="markLine" style="color:#0000FF">	    <span style="color:#FF0000">src</span>: <span id="localFont" style="color:#0000FF">local(&#9786;),</span></strong>
+	<strong class="markLine" style="color:#0000FF">	    <span style="color:#FF0000">src</span>: <span class="localFont" style="color:#0000FF">local(&#9786;),</span></strong>
 	<strong class="markLine" style="color:#0000FF">          url('../Fonts/YanoneKaffeesatz-Regular.woff') format('woff'),</strong>
 	<strong class="markLine" style="color:#0000FF">          url('../Fonts/YanoneKaffeesatz-Regular.ttf') format('truetype'),</strong>
 	<strong class="markLine" style="color:#0000FF">          url('../Fonts/YanoneKaffeesatz-Regular.svg') format('svg');    </strong>
@@ -122,12 +122,12 @@ The **@font-face** rule can be used to merge multiple font files into one font w
 
 1. Add another **@font-face** rule to download the bold style font file for the same font. Add the **font-weight** property to instruct the browser to use this font file wherever text is supposed to be bold.
 
-	<span class="codelanguage">CSS</span><pre><div class="code"><strong class="markLine">@<span style="color:#800000">font-face</span></strong>
+	<span class="codelanguage custom" style="display:none">CSS</span><pre><div class="code"><strong class="markLine">@<span style="color:#800000">font-face</span></strong>
 <strong class="markLine">{</strong>
 <strong class="markLine">    <span style="color:#FF0000">font-family</span>: <span style="color:#0000FF">YanoneKaffeesatz</span>;</strong>
 <strong class="markLine" style="color:#0000FF">    <span style="color:#FF0000">font-weight</span>: <span style="color:#0000FF">bold</span>;</strong>
 <strong class="markLine" style="color:#0000FF">    <span style="color:#FF0000">src</span>: <span style="color:#0000FF">url('../Fonts/YanoneKaffeesatz-Bold.eot')</span>;</strong>
-<strong class="markLine" style="color:#0000FF">    <span style="color:#FF0000">src</span>: <span id="localFont" style="color:#0000FF">local(&#9786;),</span></strong>
+<strong class="markLine" style="color:#0000FF">    <span style="color:#FF0000">src</span>: <span class="localFont" style="color:#0000FF">local(&#9786;),</span></strong>
 <strong class="markLine" style="color:#0000FF">         url('../Fonts/YanoneKaffeesatz-Bold.woff') format('woff'),</strong>
 <strong class="markLine" style="color:#0000FF">         url('../Fonts/YanoneKaffeesatz-Bold.ttf') format('truetype'),</strong>
 <strong class="markLine" style="color:#0000FF">         url('../Fonts/YanoneKaffeesatz-Bold.svg') format('svg');</strong>
