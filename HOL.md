@@ -94,7 +94,7 @@ This task shows how to create a **@font-face** rule to declare a web font and ho
 	{
 		 <span style="color:#FF0000">font-family</span>: <span style="color:#0000FF">YanoneKaffeesatz</span>;
 		 <span style="color:#FF0000">src</span>: <span style="color:#0000FF">url('../Fonts/YanoneKaffeesatz-Regular.eot')</span>;
-	<strong class="markLine" style="color:#0000FF">	    <span style="color:#FF0000">src</span>: <span style="color:#0000FF">local(&#9786;),</span></strong>
+	<strong class="markLine" style="color:#0000FF">	    <span style="color:#FF0000">src</span>: <span id="localFont" style="color:#0000FF">local(&#9786;),</span></strong>
 	<strong class="markLine" style="color:#0000FF">          url('../Fonts/YanoneKaffeesatz-Regular.woff') format('woff'),</strong>
 	<strong class="markLine" style="color:#0000FF">          url('../Fonts/YanoneKaffeesatz-Regular.ttf') format('truetype'),</strong>
 	<strong class="markLine" style="color:#0000FF">          url('../Fonts/YanoneKaffeesatz-Regular.svg') format('svg');    </strong>
@@ -127,7 +127,7 @@ The **@font-face** rule can be used to merge multiple font files into one font w
 <strong class="markLine">    <span style="color:#FF0000">font-family</span>: <span style="color:#0000FF">YanoneKaffeesatz</span>;</strong>
 <strong class="markLine" style="color:#0000FF">    <span style="color:#FF0000">font-weight</span>: <span style="color:#0000FF">bold</span>;</strong>
 <strong class="markLine" style="color:#0000FF">    <span style="color:#FF0000">src</span>: <span style="color:#0000FF">url('../Fonts/YanoneKaffeesatz-Bold.eot')</span>;</strong>
-<strong class="markLine" style="color:#0000FF">    <span style="color:#FF0000">src</span>: <span style="color:#0000FF">local(&#9786;),</span></strong>
+<strong class="markLine" style="color:#0000FF">    <span style="color:#FF0000">src</span>: <span id="localFont" style="color:#0000FF">local(&#9786;),</span></strong>
 <strong class="markLine" style="color:#0000FF">         url('../Fonts/YanoneKaffeesatz-Bold.woff') format('woff'),</strong>
 <strong class="markLine" style="color:#0000FF">         url('../Fonts/YanoneKaffeesatz-Bold.ttf') format('truetype'),</strong>
 <strong class="markLine" style="color:#0000FF">         url('../Fonts/YanoneKaffeesatz-Bold.svg') format('svg');</strong>
