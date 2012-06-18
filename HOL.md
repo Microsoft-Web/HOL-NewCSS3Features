@@ -93,11 +93,11 @@ This task shows how to create a **@font-face** rule to declare a web font and ho
 	<div class="code">@<span style="color:#800000">font-face</span>
 	{
 		 <span style="color:#FF0000">font-family</span>: <span style="color:#0000FF">YanoneKaffeesatz</span>;
-		 <span style="color:#FF0000">src</span>: <span style="color:#0000FF">url(&#39;../Fonts/YanoneKaffeesatz-Regular.eot&#39;)</span>;
+		 <span style="color:#FF0000">src</span>: <span style="color:#0000FF">url('../Fonts/YanoneKaffeesatz-Regular.eot')</span>;
 	<strong class="markLine" style="color:#0000FF">	    <span style="color:#FF0000">src</span>: <span style="color:#0000FF">local(&#9786;),</span></strong>
-	<strong class="markLine" style="color:#0000FF">          url(&#39;../Fonts/YanoneKaffeesatz-Regular.woff&#39;) format(&#39;woff&#39;),</strong>
-	<strong class="markLine" style="color:#0000FF">          url(&#39;../Fonts/YanoneKaffeesatz-Regular.ttf&#39;) format(&#39;truetype&#39;),</strong>
-	<strong class="markLine" style="color:#0000FF">          url(&#39;../Fonts/YanoneKaffeesatz-Regular.svg&#39;) format(&#39;svg&#39;);    </strong>
+	<strong class="markLine" style="color:#0000FF">          url('../Fonts/YanoneKaffeesatz-Regular.woff') format('woff'),</strong>
+	<strong class="markLine" style="color:#0000FF">          url('../Fonts/YanoneKaffeesatz-Regular.ttf') format('truetype'),</strong>
+	<strong class="markLine" style="color:#0000FF">          url('../Fonts/YanoneKaffeesatz-Regular.svg') format('svg');    </strong>
 	}
 	</div>
 	</pre>
@@ -126,11 +126,11 @@ The **@font-face** rule can be used to merge multiple font files into one font w
 <strong class="markLine">{</strong>
 <strong class="markLine">    <span style="color:#FF0000">font-family</span>: <span style="color:#0000FF">YanoneKaffeesatz</span>;</strong>
 <strong class="markLine" style="color:#0000FF">    <span style="color:#FF0000">font-weight</span>: <span style="color:#0000FF">bold</span>;</strong>
-<strong class="markLine" style="color:#0000FF">    <span style="color:#FF0000">src</span>: <span style="color:#0000FF">url(&#39;../Fonts/YanoneKaffeesatz-Bold.eot&#39;)</span>;</strong>
+<strong class="markLine" style="color:#0000FF">    <span style="color:#FF0000">src</span>: <span style="color:#0000FF">url('../Fonts/YanoneKaffeesatz-Bold.eot')</span>;</strong>
 <strong class="markLine" style="color:#0000FF">    <span style="color:#FF0000">src</span>: <span style="color:#0000FF">local(&#9786;),</span></strong>
-<strong class="markLine" style="color:#0000FF">         url(&#39;../Fonts/YanoneKaffeesatz-Bold.woff&#39;) format(&#39;woff&#39;),</strong>
-<strong class="markLine" style="color:#0000FF">         url(&#39;../Fonts/YanoneKaffeesatz-Bold.ttf&#39;) format(&#39;truetype&#39;),</strong>
-<strong class="markLine" style="color:#0000FF">         url(&#39;../Fonts/YanoneKaffeesatz-Bold.svg&#39;) format(&#39;svg&#39;);</strong>
+<strong class="markLine" style="color:#0000FF">         url('../Fonts/YanoneKaffeesatz-Bold.woff') format('woff'),</strong>
+<strong class="markLine" style="color:#0000FF">         url('../Fonts/YanoneKaffeesatz-Bold.ttf') format('truetype'),</strong>
+<strong class="markLine" style="color:#0000FF">         url('../Fonts/YanoneKaffeesatz-Bold.svg') format('svg');</strong>
 <strong class="markLine">}</strong>
 </div></pre>
 
