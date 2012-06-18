@@ -3,6 +3,7 @@
 ## Overview ##
 
 The Cascading Style Sheets Level 3 standard, commonly known as CSS3, is a vast improvement over the previous version of the standard. CSS3 defines new CSS properties and selectors, adds advanced layouts and visual effects, supports different types of devices and platforms, improves accessibility, and greatly extends the previously existing functionality. 
+
 Internet Explorer 10 is more standards-compliant than ever and supports most of the CSS3 specifications. The sheer size of the CSS3 standard makes it difficult to demonstrate all the new features, so this lab will only present Internet Explorer 10’s support for a selection of these features. In particular, this lab focuses on fonts, column layout, and a few advanced selectors and visual effects.
 
 <a name="Objectives" />
@@ -48,10 +49,14 @@ Estimated time to complete this lab: **45-60 minutes**.
 <a name="Exercise1" />
 ### Exercise 1: Using Web Fonts ###
 
-The starting point for this exercise is the solution in the lab installation folder under the **Source\Begin** folder. As you progress through the exercise, you will gradually improve the design and layout of web pages in the application. 
+The starting point for this exercise is the solution in the lab installation folder under the **Source\Begin** folder. As you progress through the exercise, you will gradually improve the design and layout of web pages in the application.
+ 
 Selecting the right fonts can greatly improve the design and usability of your application. The right fonts will contribute to the atmosphere conveyed by your application, make your site more accessible, and, most importantly, make it easier for your site’s visitors to read the content. The CSS standard has long provided support for using different font types and styles, but this support was limited to fonts that were built in to the browsers or already installed on the operating system. Because each operating system has a different set of installed fonts, the standard let designers specify multiple options, allowing browsers to choose the best font available. A designer could specify a number of preferred fonts, one for each operating system or browser as necessary. If the browser cannot find one of the fonts, it falls back on another font.
+
 In addition, every modern browser supported five basic fonts, known as **generic font families**. These families (**serif**, **sans-serif**, **cursive**, **fantasy**, and **monospace**) do not map to actual fonts. Rather, they represent very broad categories that include most fonts. When a style sheet specifies only fonts that the browser does not recognize, the browser relies on the **generic font family** to describe a suitable alternative that preserves the basic characteristics of the preferred (missing) font. It is ultimately up to the browser to decide which font to use for each of the generic families.
+
 Although very useful, these mechanisms are inherently imprecise. Designers have no control over the generic font families provided by the various browsers, and no control over the set of installed fonts on any given operating system or browser. There is no guarantee that the site will look the way it should on any given platform. Downloadable fonts solve this problem by letting developers and designers declare custom web fonts that modern browsers can download and display. With the advent of CSS3, designers can use almost any available web font (or even design their own), and be certain that visitors browsing with any modern browser will have the intended experience. The **@font-face** rule used to specify downloadable fonts also integrates seamlessly with the existing mechanism so browsers that do not support CSS3 or cannot download the font can still fall back on platform- or browser-specific fonts.
+
 Internet Explorer has supported downloadable fonts since Internet Explorer 4, but its support was limited to Embedded Open Type (EOT) fonts. The EOT format is a proprietary format created by Microsoft that was not adopted by other browsers. CSS3 instead adds support for the Web Open Font Format (WOFF). Internet Explorer fully supports WOFF as well as other widely available downloadable font formats. Internet Explorer 10 also supports additional font features added in CSS3.
 
 In this exercise, you will learn:
@@ -185,7 +190,8 @@ In this exercise, you will learn:
 CSS3 adds many new pseudo-classes to match elements in ways that were not possible or easily accomplished in earlier versions. Many of these match elements based on their positions relative to their siblings. This task shows how to use just a couple of the positional pseudo-classes.
 
 1.	Open the **NewGame.htm** file and find the **section** element with the **id** attribute **chooseImageSection**. Observe that the element contains four child elements: two **p** elements followed by two **input** elements. We would like to place some vertical space between the second **p** element and the first **input** element to better differentiate between the two options, without affecting the other siblings. In previous versions of CSS, there was no easy, explicit way to select the correct element. CSS3 provides a number of pseudo-classes that let you select the correct element precisely.
-Open the **Base.css** file in the **CSS** folder and find the style block with the selector **#chooseImageSection**. Immediately after it, add a new style block that selects the last **p** element and adds a lower margin:
+
+	Open the **Base.css** file in the **CSS** folder and find the style block with the selector **#chooseImageSection**. Immediately after it, add a new style block that selects the last **p** element and adds a lower margin:
 	
 	<!-- mark:1-4 -->
 	````CSS
@@ -212,6 +218,7 @@ The selector **#InstructionsImages > img:nth-child(2)** selects the second **img
 #### Task 2 - Using the :not Pseudo-Class Selector ####
 
 CSS3 adds a number of additional pseudo-classes: the **:enabled** and **:disabled** pseudo-classes match enabled and disabled elements; the **:checked** pseudo-class matches elements (like the checkbox element) that are in a _checked_ state; and the **:empty** pseudo-class matches elements that have no content.
+
 However, possibly the most interesting pseudo-class is the **:not()** pseudo-class. This pseudo-class can appear anywhere in the selector, and receives a parameter that is itself a simple selector such as an id, tag, or class selector. The pseudo-class will match any element that does not match the selector in the parenthesis. This task shows how to use the **:not** pseudo-class.
 
 1.	The **OpenGame.htm** page shows thumbnails of stored images. When the mouse hovers over a thumbnail, that thumbnail is enlarged a bit to emphasize that image. However, we would like the remaining images to become a bit smaller and fade out. Earlier versions of CSS could not do this because they could only match elements in a specific state. It is possible and fairly simple to do this using JavaScript, but not very fast. More importantly, this is a presentational concern that should not require JavaScript.
@@ -392,7 +399,9 @@ The **scale** function accepts two arguments that represent the scale multiplier
 #### Task 3- Creating Transitions ####
 
 The ability to create animations is one the most intriguing features of the CSS3 specifications. Support for animation is provided by two separate CSS3 modules: CSS Transitions and CSS Animations. Each module provides a different approach. Transitions are simple and integrate very easily with existing CSS declarations. Animations are more advanced and support complex animations and finer-grained control.
+
 Creating a transition takes two steps. First, the CSS **transition** property is used in a style block that matches the target elements in their initial state. The **transition** property specifies the CSS properties that will be animated. Then the final values of these properties, the values as they will appear at the end of the animation, are defined in CSS style blocks whose selectors match the modified states of the target elements. The selectors need only match the same elements for the transition to work: they can match a pseudo-class-specific state such as **:hover** or **:active**, or an unrelated class that is added to the element using JavaScript.
+
 For example, if the background color of an element whose class is **animate-me** should be changed gradually (using animation) from blue to red when the mouse hovers over the element, two selector blocks are declared. The first defines the initial background color as being blue and specifies - using the **transition** property - that any changes to the **background-color** property should be animated automatically by the browser, as follows:
 	
 ````CSS
